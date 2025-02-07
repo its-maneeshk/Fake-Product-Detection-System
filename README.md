@@ -1,4 +1,4 @@
-# Fake Product Review Detection System
+# Fake Product Detection System
 
 **Fake Product Review Detection System 📌** The Fake Product Review Detection System is a machine learning-powered web application designed to analyze and detect fake reviews on eCommerce platforms. It helps users identify whether a product has genuine or manipulated reviews by leveraging Natural Language Processing (NLP) and supervised learning models.
 
@@ -33,7 +33,7 @@
 **This system empowers consumers to make informed purchasing decisions by identifying fraudulent product reviews!**
 
 # Demo Images 
-Here are some screenshots demonstrating the key functionalities of **Fake Product Review Detection System**:
+Here are some screenshots demonstrating the key functionalities of **Fake Product Detection System**:
 
 1. **[DEMO IMAGES]**:
    ![IMAGE DESCRIPTION](Image Parmanent link)
