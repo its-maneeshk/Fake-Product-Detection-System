@@ -36,8 +36,7 @@
 Here are some screenshots demonstrating the key functionalities of **Fake Product Detection System**:
 
 1. **[DEMO IMAGES]**:
-   ![IMAGE DESCRIPTION](Image Parmanent link)
-   [will be uploaded soon]
+   ![IMAGE DESCRIPTION](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/cd13ca9c1b9880703a8c437faf675f895ffa9d9b/tiny-fake-review-detector/project_images/screencapture-localhost-5173-2025-02-08-00_36_39.png)
    
 
 
