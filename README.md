@@ -1,26 +1,43 @@
-# [PROJECT NAME] 🏨
+# Fake Product Review Detection System
 
-**[PROJECT NAME]** short project description about the project.
+**Fake Product Review Detection System 📌** The Fake Product Review Detection System is a machine learning-powered web application designed to analyze and detect fake reviews on eCommerce platforms. It helps users identify whether a product has genuine or manipulated reviews by leveraging Natural Language Processing (NLP) and supervised learning models.
 
 ## Features 🪶
 
-| **Module**                     | **Description**                                                                                          | **Module**                   | **Description**                                 |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------- | ---------------------------- | ----------------------------------------------- |
-| **Authentication**             | Handles user login, signup, password reset, and logout operations.                                       | **Guest Management**         | Manages guest registration and information.     |
-| **Database Connectivity**      | Establishes and manages the connection between the application and the MySQL database.                   | **Admin Operations**         | Provides administrative functionalities.        |
-| **User Option Handling**       | Manages different options available to users (admin and customer).                                       | **Error Handling**           | Ensures stable application performance.         |
-| **Junction and Navigation**    | Controls navigation between different sections of the system.                                            | **Welcome and Greeting**     | Displays welcome messages and guides users.     |
-| **Main Menu**                  | Provides the main interface for user interaction.                                                        | **Logout**                   | Safely logs out users from the system.          |
+| **Module**                     | **Description**                                                                                          |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| **Fake Review Detection**      | Classifies reviews as Fake or Original using a trained ML model.                                         |
+| **User-Friendly Interface**    | Simple, intuitive UI built with React & Tailwind CSS.                                                    |
+| **API Integration**            | Connects to a Flask backend for real-time predictions.                                                   |
+| **Data Upload Support**        | Allows users to upload review datasets for batch analysis.                                               |
+| **Visualization & Insights**   | Displays review authenticity percentage with meaningful insights.                                        |
+| **Fast & Efficient**           | Uses vectorization techniques for quick text processing.                                                 |
 
-## User Interface
-The application features a command-line interface (CLI) that guides users through various options and operations, ensuring ease of use and accessibility for all users.
+## Tech Stack 🛠️
+✅ **Frontend:** Vite + React + Tailwind CSS.  
+✅ **Backend:** FastAPI / Flask (REST API).    
+✅ **Machine Learning:** Scikit-learn (Logistic Regression).  
+✅ **Model Storage:** Joblib for saving and loading .pkl models.  
+✅ **Data Processing:** Pandas & NumPy.
+
+
+
+## How It Works:
+1️⃣ Train the Machine Learning model on real & fake reviews dataset. <br>
+2️⃣ Save the trained model as model.pkl.  <br>
+3️⃣ Run the backend server to expose a REST API. <br>
+4️⃣ Connect the React frontend to interact with the API. <br>
+5️⃣ Upload or enter product reviews to get authenticity results <br>
+
+
+**This system empowers consumers to make informed purchasing decisions by identifying fraudulent product reviews!**
 
 # Demo Images 
-
-Here are some screenshots demonstrating the key functionalities of **CalculatorApp**:
+Here are some screenshots demonstrating the key functionalities of **Fake Product Review Detection System**:
 
 1. **[DEMO IMAGES]**:
    ![IMAGE DESCRIPTION](Image Parmanent link)
+   [will be uploaded soon]
    
 
 
