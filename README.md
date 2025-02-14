@@ -1,4 +1,4 @@
-# Fake Product Detection System
+# Fraud Filter - Fake Product Detection System
 
 **Fake Product Review Detection System 📌** The Fake Product Review Detection System is a machine learning-powered web application designed to analyze and detect fake reviews on eCommerce platforms. It helps users identify whether a product has genuine or manipulated reviews by leveraging Natural Language Processing (NLP) and supervised learning models.
 
@@ -36,7 +36,19 @@
 Here are some screenshots demonstrating the key functionalities of **Fake Product Detection System**:
 
 1. **[DEMO IMAGES]**:
-   ![IMAGE DESCRIPTION](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/cd13ca9c1b9880703a8c437faf675f895ffa9d9b/tiny-fake-review-detector/project_images/screencapture-localhost-5173-2025-02-08-00_36_39.png)
+   ![IMAGE DESCRIPTION](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/197ca7d47853f5c089d9f38879bdf5acbabe58c6/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%201.png)
+2. **[DEMO IMAGES]**:
+   ![IMAGE DESCRIPTION](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/197ca7d47853f5c089d9f38879bdf5acbabe58c6/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%202.png)
+3. **[DEMO IMAGES]**:
+   ![IMAGE DESCRIPTION](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/197ca7d47853f5c089d9f38879bdf5acbabe58c6/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%203.png)
+4. **[DEMO IMAGES]**:
+   ![IMAGE DESCRIPTION](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/197ca7d47853f5c089d9f38879bdf5acbabe58c6/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%204.png)
+5. **[DEMO IMAGES]**:
+   ![IMAGE DESCRIPTION](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/197ca7d47853f5c089d9f38879bdf5acbabe58c6/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%205.png)
+6. **[DEMO IMAGES]**:
+   ![IMAGE DESCRIPTION](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/197ca7d47853f5c089d9f38879bdf5acbabe58c6/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%206.png)
+7. **[DEMO IMAGES]**:
+   ![IMAGE DESCRIPTION](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/197ca7d47853f5c089d9f38879bdf5acbabe58c6/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%207.png)
    
 
 
