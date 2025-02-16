@@ -120,7 +120,7 @@ npm run dev
 | **CONTACTS** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%204.png" width="200px"> |
 | **BLOGS** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%205.png" width="200px"> |
 | **FAQ's** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%206.png" width="200px"> |
-| **MODEL TRY PAGE** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%207.png" width="200px"> |
+| **MODEL TRY PAGE** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/748fbeba14ab27dcfcdc998282dc48df47ecbb75/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%207.png" width="200px"> |
 
 
 📌 More detailed **UI screenshots** can be found in the project_images/ folder.
