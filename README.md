@@ -31,7 +31,7 @@ The **Fake Product Detection System** is a **machine learning-powered web applic
 ## 📌 How It Works  
 
 1️⃣ **Train the Machine Learning model** using real & fake review datasets.  
-2️⃣ **Save the trained model** as `fake_review_model.pk`.  
+2️⃣ **Save the trained model** as `fake_review_model.pkl`.  
 3️⃣ **Run the Flask backend server** to expose a REST API.  
 4️⃣ **Connect the React frontend** to interact with the API.  
 5️⃣ **Upload or enter product reviews** to get authenticity results.  
@@ -40,30 +40,74 @@ The **Fake Product Detection System** is a **machine learning-powered web applic
 
 ---
 
-## 📂 Model Upload Restriction  
+## 📂 Project Directory Structure  
 
-🚨 **GitHub limits file uploads to 100MB**, so the trained model (`fake_review_model.pk`) is not included in this repository.  
-
-### 🔹 **How to Get the Model?**  
-
-#### **1️⃣ Train Your Own Model**  
-- The **training dataset format** is provided in this repository.  
-- You can generate your dataset and train the model using:  
-  ```sh
-  python train_model.py
-  ```
-- This script will generate a new `fake_review_model.pk` file for you.  
-
-#### **2️⃣ Download Pre-trained Model**  
-If you prefer using my trained model, download it here:  
-📥 **[Download Pre-trained Model](https://drive.google.com/drive/folders/1GHUwUf4GvInUNCUUbtCsggsqxara3Z9I?usp=sharing)**  
-
-After downloading, place the `fake_review_model.pk` file in:  
+```sh
+Fake-Product-Detection-System/
+│── backend/
+│   ├── models/
+│   │   ├── fake_review_model.pkl  # Trained ML model
+│   ├── routes/
+│   │   ├── predict.py             # API route for predictions
+│   ├── static/                    # Static files (if needed)
+│   ├── templates/                  # HTML templates (if used)
+│   ├── train_model.py              # Script to train the ML model
+│   ├── requirements.txt            # Python dependencies
+│   ├── app.py                      # Main Flask API file
+│── frontend/
+│   ├── src/
+│   │   ├── components/             # React components
+│   │   ├── assets/                 # Images, icons, etc.
+│   │   ├── utils/                  # Utility functions
+│   ├── public/
+│   ├── package.json                # Frontend dependencies
+│   ├── tailwind.config.js          # Tailwind configuration
+│   ├── vite.config.js              # Vite configuration
+│── docs/                           # Documentation & guides
+│── README.md                       # Project documentation
+│── .gitignore                      # Git ignore file
 ```
-backend/model/
-```  
-Now, you can use the model without training it from scratch! 🚀  
+---
+## 📦 Installation & Setup  
 
+### 🔹 Prerequisites  
+Ensure you have the following installed on your system:  
+- **Python 3.8+**  
+- **Node.js & npm**  
+- **pip** (Python package manager)  
+
+---
+
+### 🔹 Backend Setup (Flask API)  
+```sh
+# Navigate to the backend folder
+cd backend
+
+# Create a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Flask server
+python app.py
+
+```
+#### 🚀 Flask API will start at http://127.0.0.1:5000/
+
+### 🔹 Frontend Setup (React + Vite + Tailwind CSS)
+```sh
+# Navigate to the frontend folder
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+#### 🚀 React app will run at http://localhost:5173/
 ---
 
 ## 📸 Demo Screenshots  
@@ -74,7 +118,7 @@ Now, you can use the model without training it from scratch! 🚀
 | **Fake Review Detection** | ![Fake Review Detection](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/main/project_images/User_review_impact_2.png) |
 | **Dashboard Overview** | ![Dashboard Overview](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/main/project_images/User_review_impact_3.png) |
 
-📌 More detailed **UI screenshots** can be found in the `project_images/` folder.
+📌 More detailed **UI screenshots** can be found in the project_images/ folder.
 
 ---
 
