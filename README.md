@@ -1,4 +1,4 @@
-# Fraud Filter - Fake Product Detection System
+# Fraud Filter - Fake Product Detection System.
 
 **Fake Product Review Detection System 📌** The Fake Product Review Detection System is a machine learning-powered web application designed to analyze and detect fake reviews on eCommerce platforms. It helps users identify whether a product has genuine or manipulated reviews by leveraging Natural Language Processing (NLP) and supervised learning models.
 
