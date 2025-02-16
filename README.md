@@ -114,9 +114,14 @@ npm run dev
 
 | **Interface** | **Preview** |
 |--------------|------------|
-| **Review Analysis Interface** | ![User Review Impact](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/main/project_images/User_review_impact_1.png) |
-| **Fake Review Detection** | ![Fake Review Detection](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/main/project_images/User_review_impact_2.png) |
-| **Dashboard Overview** | ![Dashboard Overview](https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/main/project_images/User_review_impact_3.png) |
+| **HOME** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/fb51867134fdffadee01a5b7dd4ce345c22e1251/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%201.png" width="200px"> |
+| **WORKING & FEATURES** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%202.png" width="200px"> |
+| **ABOUT** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%203.png" width="200px"> |
+| **CONTACTS** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%204.png" width="200px"> |
+| **BLOGS** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%205.png" width="200px"> |
+| **FAQ's** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%206.png" width="200px"> |
+| **MODEL TRY PAGE** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%207.png" width="200px"> |
+
 
 📌 More detailed **UI screenshots** can be found in the project_images/ folder.
 
