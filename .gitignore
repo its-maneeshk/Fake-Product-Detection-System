@@ -19,3 +19,4 @@ tiny-fake-review-detector/frontend/node_modules
 
 # MODEL TRAINER
 tiny-fake-review-detector/Model Trainer/.ipynb_checkpoints
+*.pkl

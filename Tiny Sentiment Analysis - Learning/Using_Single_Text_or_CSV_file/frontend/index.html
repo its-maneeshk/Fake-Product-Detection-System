@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <h2>Sentiment Analysis</h2>
+
+    <!-- Single Review Analysis -->
+    <textarea id="reviewText" placeholder="Enter your review here"></textarea>
+    <button onclick="analyzeSentiment()">Analyze</button>
+    <p id="singleResult"></p>
+
+    <hr>
+
+    <!-- CSV File Upload -->
+    <h3>Upload CSV File for Bulk Analysis</h3>
+    <input type="file" id="fileInput">
+    <button onclick="uploadCSV()">Upload</button>
+    <pre id="bulkResult"></pre>
+
+    <script>
+        function analyzeSentiment() {
+            const text = document.getElementById("reviewText").value;
+            
+            fetch("http://127.0.0.1:5000/analyze", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ text: text })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("singleResult").innerText = `Sentiment: ${data.sentiment} (Score: ${data.sentiment_score})`;
+            })
+            .catch(error => console.error("Error:", error));
+        }
+
+        function uploadCSV() {
+            const fileInput = document.getElementById("fileInput");
+            const file = fileInput.files[0];
+
+            if (!file) {
+                alert("Please select a CSV file.");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("file", file);
+
+            fetch("http://127.0.0.1:5000/upload", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                let resultText = `Total Reviews: ${data.total_reviews}\n\n`;
+                data.results.forEach((review, index) => {
+                    resultText += `${index + 1}. ${review.review} - Sentiment: ${review.sentiment} (Score: ${review.sentiment_score})\n`;
+                });
+                document.getElementById("bulkResult").innerText = resultText;
+            })
+            .catch(error => console.error("Error:", error));
+        }
+    </script>
+</body>
+</html>
