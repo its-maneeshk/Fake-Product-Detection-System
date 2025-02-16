@@ -5,6 +5,10 @@ Documentation/
 # FRAUD FILTER - MINOR PROJECT 
 FraudFilter - Minor Project/frontend/node_modules
 
+# MODEL TRAINER
+tiny-fake-review-detector/Model Trainer/.ipynb_checkpoints
+*.pkl
+
 
 # *****************************************************
 # TINY FAKE REVIEW DETECTOR
@@ -17,6 +21,4 @@ tiny-fake-review-detector/backend/.venv1
 # FRONTEND 
 tiny-fake-review-detector/frontend/node_modules
 
-# MODEL TRAINER
-tiny-fake-review-detector/Model Trainer/.ipynb_checkpoints
-*.pkl
+
