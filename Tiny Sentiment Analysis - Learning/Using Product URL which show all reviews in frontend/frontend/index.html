@@ -1,0 +1,57 @@
+<!-- USE THIS URL : https://www.flipkart.com/boult-w20-zen-enc-mic-35h-battery-life-low-latency-gaming-made-india-5-3v-bluetooth/product-reviews/itm42ba3da4c8d78?pid=ACCGRNFM5GBPUKPF&lid=LSTACCGRNFM5GBPUKPFIDSZEL&marketplace=FLIPKART&page=2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrape Reviews & Ratings</title>
+</head>
+<body>
+    <h2>Enter Product URL</h2>
+    <input type="text" id="productURL" placeholder="Enter eCommerce product URL">
+    <button onclick="scrapeReviews()">Scrape Reviews & Ratings</button>
+    
+    <p id="statusMessage"></p> <!-- Status message for fetching -->
+    <pre id="scrapeResult"></pre>
+
+    <script>
+        function scrapeReviews() {
+            const url = document.getElementById("productURL").value;
+            const statusMessage = document.getElementById("statusMessage");
+            const resultContainer = document.getElementById("scrapeResult");
+
+            // Clear previous results and show fetching message
+            statusMessage.innerText = "Fetching data, please wait...";
+            resultContainer.innerText = "";
+
+            fetch("http://127.0.0.1:5000/scrape", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ url: url })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    statusMessage.innerText = `Error: ${data.error}`;
+                    return;
+                }
+
+                let resultText = `Total Reviews: ${data.total_reviews}\n\n`;
+                data.results.forEach((item, index) => {
+                    resultText += `${index + 1}. Review: ${item.review}\n   Rating: ${item.rating}\n\n`;
+                });
+
+                resultContainer.innerText = resultText;
+                statusMessage.innerText = "Fetching complete. Here is the final result:";
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                statusMessage.innerText = "An error occurred while fetching data.";
+            });
+        }
+    </script>
+</body>
+</html>
