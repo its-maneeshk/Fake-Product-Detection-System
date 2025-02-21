@@ -146,100 +146,100 @@ const Home = () => {
             </section>
 
 
-            <section class="text-gray-600 body-font bg-gray-100">
-                <div class="container px-5 py-16 mx-auto">
-                    <div class="text-center mb-12">
-                        <h1 class="sm:text-4xl text-3xl font-bold text-gray-900 mb-4">Key Features of Fake Product Detection System</h1>
-                        <p class="text-lg text-gray-700 leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+            <section className="text-gray-600 body-font bg-gray-100">
+                <div className="container px-5 py-16 mx-auto">
+                    <div className="text-center mb-12">
+                        <h1 className="sm:text-4xl text-3xl font-bold text-gray-900 mb-4">Key Features of Fake Product Detection System</h1>
+                        <p className="text-lg text-gray-700 leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
                             Our advanced AI-driven system helps users identify fake products by analyzing product reviews with real-time data insights.
                         </p>
                     </div>
-                    <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-                        <div class="p-2 sm:w-1/2 w-full">
-                            <div class="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
-                                <svg class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                    <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+                        <div className="p-2 sm:w-1/2 w-full">
+                            <div className="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
+                                <svg className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24">
                                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                                     <path d="M22 4L12 14.01l-3-3"></path>
                                 </svg>
-                                <span class="title-font font-medium">AI-Powered Fake Review Detection</span>
+                                <span className="title-font font-medium">AI-Powered Fake Review Detection</span>
                             </div>
                         </div>
-                        <div class="p-2 sm:w-1/2 w-full">
-                            <div class="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
-                                <svg class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                        <div className="p-2 sm:w-1/2 w-full">
+                            <div className="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
+                                <svg className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24">
                                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                                     <path d="M22 4L12 14.01l-3-3"></path>
                                 </svg>
-                                <span class="title-font font-medium">Real-Time Product Analysis</span>
+                                <span className="title-font font-medium">Real-Time Product Analysis</span>
                             </div>
                         </div>
-                        <div class="p-2 sm:w-1/2 w-full">
-                            <div class="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
-                                <svg class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                        <div className="p-2 sm:w-1/2 w-full">
+                            <div className="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
+                                <svg className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24">
                                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                                     <path d="M22 4L12 14.01l-3-3"></path>
                                 </svg>
-                                <span class="title-font font-medium">Trust Score Calculation</span>
+                                <span className="title-font font-medium">Trust Score Calculation</span>
                             </div>
                         </div>
-                        <div class="p-2 sm:w-1/2 w-full">
-                            <div class="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
-                                <svg class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                        <div className="p-2 sm:w-1/2 w-full">
+                            <div className="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
+                                <svg className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24">
                                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                                     <path d="M22 4L12 14.01l-3-3"></path>
                                 </svg>
-                                <span class="title-font font-medium">Product Authenticity Report</span>
+                                <span className="title-font font-medium">Product Authenticity Report</span>
                             </div>
                         </div>
-                        <div class="p-2 sm:w-1/2 w-full">
-                            <div class="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
-                                <svg class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                        <div className="p-2 sm:w-1/2 w-full">
+                            <div className="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
+                                <svg className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24">
                                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                                     <path d="M22 4L12 14.01l-3-3"></path>
                                 </svg>
-                                <span class="title-font font-medium">User-Friendly Dashboard</span>
+                                <span className="title-font font-medium">User-Friendly Dashboard</span>
                             </div>
                         </div>
-                        <div class="p-2 sm:w-1/2 w-full">
-                            <div class="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
-                                <svg class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                        <div className="p-2 sm:w-1/2 w-full">
+                            <div className="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
+                                <svg className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24">
                                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                                     <path d="M22 4L12 14.01l-3-3"></path>
                                 </svg>
-                                <span class="title-font font-medium">Cross-Platform Support</span>
+                                <span className="title-font font-medium">Cross-Platform Support</span>
                             </div>
                         </div>
-                        <div class="p-2 sm:w-1/2 w-full">
-                            <div class="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
-                                <svg class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                        <div className="p-2 sm:w-1/2 w-full">
+                            <div className="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
+                                <svg className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24">
                                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                                     <path d="M22 4L12 14.01l-3-3"></path>
                                 </svg>
-                                <span class="title-font font-medium">Automated Review Scraper</span>
+                                <span className="title-font font-medium">Automated Review Scraper</span>
                             </div>
                         </div>
-                        <div class="p-2 sm:w-1/2 w-full">
-                            <div class="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
-                                <svg class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                        <div className="p-2 sm:w-1/2 w-full">
+                            <div className="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
+                                <svg className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24">
                                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                                     <path d="M22 4L12 14.01l-3-3"></path>
                                 </svg>
-                                <span class="title-font font-medium">Fraud Warning Alerts</span>
+                                <span className="title-font font-medium">Fraud Warning Alerts</span>
                             </div>
                         </div>
-                        <div class="p-2 sm:w-1/2 w-full">
-                            <div class="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
-                                <svg class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                        <div className="p-2 sm:w-1/2 w-full">
+                            <div className="bg-white shadow-lg rounded-lg flex p-4 h-full items-center">
+                                <svg className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24">
                                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                                     <path d="M22 4L12 14.01l-3-3"></path>
                                 </svg>
-                                <span class="title-font font-medium">Data-Driven Scam Insights</span>
+                                <span className="title-font font-medium">Data-Driven Scam Insights</span>
                             </div>
                         </div>
                     </div>
                     <button
                         onClick={handleNevigateTOAbout}
-                        class="flex mx-auto mt-12 text-white bg-green-500 border-0 py-3 px-8 focus:outline-none hover:bg-green-600 rounded-lg text-lg">
+                        className="flex mx-auto mt-12 text-white bg-green-500 border-0 py-3 px-8 focus:outline-none hover:bg-green-600 rounded-lg text-lg">
                         Learn More
                     </button>
                 </div>
