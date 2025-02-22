@@ -65,34 +65,106 @@ const ModelTryItOutPage = () => {
 
     return (
         <>
-            <section className="text-gray-600 bg-gray-200 body-font">
-                <div className="container px-20 py-10 mx-auto flex flex-wrap">
-                    <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
-                        <div className="w-full sm:p-4 px-4 mb-6">
-                            <h1 className="title-font font-medium text-3xl mb-2 text-gray-900">
-                                Fake Product Detection System using reviews and product link for eCommerce platforms.
-                            </h1>
-                            <p className="leading-relaxed">
-                                Detect fake product listings based on user reviews and ratings by analyzing discrepancies in review sentiment, rating consistency, and review patterns.
+            <section className="bg-[#0B0F12]">
+                <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32">
+                    <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+                        <div>
+                            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-blue-900 uppercase rounded-full bg-blue-100">
+                                AI-Powered
                             </p>
                         </div>
+                        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
+                            <span className="relative inline-block">
+                                <span className="relative">Fake</span>
+                            </span>{' '}Product Detection System
+                        </h2>
+                        <p className="text-base text-gray-300 md:text-lg">
+                            Our advanced AI model analyzes customer reviews and ratings to detect fake products, helping you make informed decisions before purchasing.
+                        </p>
                     </div>
-                    <div className="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
-                        <img className="object-cover object-center w-full h-full" src="src/assets/productReviewImpact/User_review_impact (1).jpg" alt="stats" />
+                    <div className="grid max-w-screen-lg mx-auto space-y-6 lg:grid-cols-2 lg:space-y-0 lg:divide-x">
+                        <div className="space-y-6 sm:px-16">
+                            <div className="flex flex-col max-w-md sm:flex-row">
+                                <div className="mb-4 mr-4">
+                                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                                        <svg className="w-8 h-8 text-blue-500 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                                            <polygon strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 className="mb-3 text-white text-xl font-bold leading-5">AI-Based Analysis</h6>
+                                    <p className="text-sm text-white">
+                                        Our intelligent model evaluates review sentiment and rating consistency to identify potential fake reviews.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex flex-col max-w-md sm:flex-row">
+                                <div className="mb-4 mr-4">
+                                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                                        <svg className="w-8 h-8 text-blue-500 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                                            <polygon strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 className="mb-3 text-white text-xl font-bold leading-5">Real vs Fake Differentiation</h6>
+                                    <p className="text-sm text-white">
+                                        Compare customer ratings and reviews to determine authenticity with high accuracy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="space-y-6 sm:px-16">
+                            <div className="flex flex-col max-w-md sm:flex-row">
+                                <div className="mb-4 mr-4">
+                                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                                        <svg className="w-8 h-8 text-blue-500 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                                            <polygon strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 className="mb-3 text-white text-xl font-bold leading-5">User-Friendly Interface</h6>
+                                    <p className="text-sm text-white">
+                                        Easily upload and analyze product reviews with a simple and intuitive interface.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex flex-col max-w-md sm:flex-row">
+                                <div className="mb-4 mr-4">
+                                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                                        <svg className="w-8 h-8 text-blue-500 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                                            <polygon strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 className="mb-3 text-white text-xl font-bold leading-5">Instant Results</h6>
+                                    <p className="text-sm text-white">
+                                        Get a detailed analysis within seconds and ensure you buy only genuine products.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section className="py-20 flex flex-col items-center">
+            <section className="py-14 flex bg-stone-100 flex-col items-center">
                 <div className="text-center w-full mb-10">
-                    <h2 className="text text-green-500 tracking-widest font-medium title-font mb-1">
-                        FAKE PRODUCT AUTHENTICITY DETECTION
-                    </h2>
-                    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                        Detect Fake Reviews & Products
+                    <span className="relative flex justify-center">
+                        <div
+                            className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
+                        ></div>
+
+                        <span className="relative z-10 bg-stone-100 text-green-600 px-6">Detect Fake Reviews & Ensure Authenticity</span>
+                    </span>
+                    <h1 className="sm:text-5xl text-2xl font-salita title-font mb-4 text-gray-950">
+                        AI-Powered Fake Product Detection
                     </h1>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-700">
-                        Upload a CSV file or enter a product link to analyze its reviews and determine whether the product is fake or authentic.
+                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base font-semibold text-gray-700">
+                        Uncover fake product reviews with our advanced AI-based detection system. By analyzing customer feedback, sentiment patterns, and rating inconsistencies, our model provides an accurate authenticity score—helping you make informed decisions before purchasing
                     </p>
                 </div>
                 {/* Tabs Section & Result Display */}
@@ -102,13 +174,13 @@ const ModelTryItOutPage = () => {
                             className={`w-1/2 py-3 text-center font-medium rounded-tl-2xl ${activeTab === "csv" ? "bg-green-500 text-white border-b-4 border-green-700" : "bg-transparent text-white hover:text-green-700"}`}
                             onClick={() => setActiveTab("csv")}
                         >
-                            Using CSV File
+                            Analyze via Scraped CSV File
                         </button>
                         <button
                             className={`w-1/2 py-3 text-center font-medium rounded-tr-2xl ${activeTab === "link" ? "bg-green-500 text-white border-b-4 border-green-700" : "bg-transparent text-white hover:text-green-700"}`}
                             onClick={() => setActiveTab("link")}
                         >
-                            Using Product Link
+                            Analyze Product via Link
                         </button>
                     </div>
 
@@ -117,22 +189,24 @@ const ModelTryItOutPage = () => {
                         <div className="text-center">
                             <h2 className="text-lg font-semibold text-white mb-3">Upload CSV File</h2>
                             <p className="text-white text-sm mb-4">
-                                Upload a CSV file containing product reviews to analyze their authenticity.
+                                Upload a CSV file containing product reviews and ratings. The system will analyze the data to detect fake reviews and assess product authenticity.
                             </p>
-                            <input
-                                type="file"
-                                id="fileInput"
-                                accept=".csv"
-                                onChange={handleFileChange}
-                                className="border p-2 rounded w-3/5 bg-white"
-                            />
-                            <div className="flex justify-center space-x-2 mt-4">
-                                <button className="text-white bg-green-500 py-2 px-4 rounded hover:bg-green-600" onClick={handleUpload} disabled={loading}>
-                                    {loading ? "Uploading..." : "Upload"}
-                                </button>
-                                <button className="text-white bg-red-500 py-2 px-4 rounded hover:bg-red-600" onClick={handleReset}>
-                                    Reset
-                                </button>
+                            <div className="flex justify-center items-center  space-x-2">
+                                <input
+                                    type="file"
+                                    id="fileInput"
+                                    accept=".csv"
+                                    onChange={handleFileChange}
+                                    className="border p-2 rounded w-3/5 bg-white"
+                                />
+                                <div className="flex justify-center space-x-2">
+                                    <button className="text-white bg-green-500 py-3 px-5 rounded hover:bg-green-600" onClick={handleUpload} disabled={loading}>
+                                        {loading ? "Uploading..." : "Upload"}
+                                    </button>
+                                    <button className="text-white bg-red-500 py-3 px-5 rounded hover:bg-red-600" onClick={handleReset}>
+                                        Reset
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     )}
@@ -140,24 +214,26 @@ const ModelTryItOutPage = () => {
                     {/* Product Link Analysis Form */}
                     {activeTab === "link" && (
                         <div className="text-center">
-                            <h2 className="text-lg font-semibold text-white mb-3">Enter Product Link</h2>
+                            <h2 className="text-lg font-semibold text-white mb-3">Enter Actual Product Link</h2>
                             <p className="text-white text-sm mb-4">
-                                    Enter a product link to fetch and analyze reviews for fake detection.
-                                </p>
-                            <input
-                                type="text"
-                                placeholder="Enter product link"
-                                value={productLink}
-                                onChange={(e) => setProductLink(e.target.value)}
-                                className="border p-2 rounded w-3/5 bg-white"
-                            />
-                            <div className="flex justify-center space-x-2 mt-4">
-                                <button className="text-white bg-green-500 py-2 px-4 rounded hover:bg-green-600" onClick={handleLinkAnalysis} disabled={loading}>
-                                    {loading ? "Analyzing..." : "Analyze"}
-                                </button>
-                                <button className="text-white bg-red-500 py-2 px-4 rounded hover:bg-red-600" onClick={handleReset}>
-                                    Reset
-                                </button>
+                                Enter a product link to fetch and analyze its reviews and ratings. The system will assess the data to detect fake reviews and determine product authenticity.
+                            </p>
+                            <div className="flex space-x-2">
+                                <input
+                                    type="text"
+                                    placeholder="Enter product link"
+                                    value={productLink}
+                                    onChange={(e) => setProductLink(e.target.value)}
+                                    className="border p-2 rounded w-3/5 bg-white"
+                                />
+                                <div className="flex justify-center space-x-2">
+                                    <button className="text-white bg-green-500 py-3 px-5 rounded hover:bg-green-600" onClick={handleLinkAnalysis} disabled={loading}>
+                                        {loading ? "Analyzing..." : "Analyze"}
+                                    </button>
+                                    <button className="text-white bg-red-500 py-3 px-5 rounded hover:bg-red-600" onClick={handleReset}>
+                                        Reset
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     )}
@@ -167,8 +243,8 @@ const ModelTryItOutPage = () => {
 
                     {/* Result Display Inside the Same Card */}
                     {result && (
-                        <div className="mt-6 bg-gray-800 p-4 rounded-lg shadow-md text-center text-white">
-                            <h2 className="text-lg font-semibold underline mb-3">Analysis Result</h2>
+                        <div className="mt-6 bg-gray-800 p-4 rounded-lg shadow-md text-white">
+                            <h2 className="text-lg font-semibold underline mb-3 text-center">Analysis Result</h2>
                             <p><strong>Product ID:</strong> {result.prod_id || "N/A"}</p>
                             <p><strong>Product Name:</strong> {result.prod_name || "N/A"}</p>
                             <p><strong>Total Reviews:</strong> {result.total_reviews}</p>
@@ -213,9 +289,62 @@ const ModelTryItOutPage = () => {
                         </div>
                     )}
                 </div>
-
-
             </section>
+
+            <section class="text-gray-300 bg-[#142F32] body-font">
+                <div class="container mx-auto flex px-5 py-16 items-center justify-center">
+                    <div class="w-full max-w-4xl">
+                        <div class="p-6 rounded-lg border-2 border-indigo-500 text-center">
+                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-semibold text-white">
+                                Join Us & Improve the System!
+                            </h1>
+                            <p class="mb-6 leading-relaxed">
+                                This project is open-source! Contribute, improve, or suggest features to make it better.
+                            </p>
+                            <div class="flex justify-center space-x-6">
+                                <button class="flex items-center justify-center font-semibold text-gray-950 bg-[#E2FECC] border-0 py-2 px-6 rounded-lg w-auto hover:bg-white hover:scale-105 transition-transform focus:outline-none">
+                                    GitHub Repo
+                                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button class="flex items-center justify-center text-start font-semibold text-gray-950 bg-white border-0 py-2 px-6 rounded-lg w-auto hover:bg-white hover:scale-105 transition-transform duration-200 animate-pulse focus:outline-none">
+                                    Want to contribute?
+                                    <br />Fork the repo, add improvements, and submit a pull request!
+                                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-4">
+                                Get involved and help shape the future of this project.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section className="text-gray-600 bg-gray-200 body-font">
+                <div className="container px-20 py-10 mx-auto flex flex-wrap">
+                    <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+                        <div className="w-full sm:p-4 px-4 mb-6">
+                            <h1 className="title-font font-medium text-3xl mb-2 text-gray-900">
+                                Fake Product Detection System using reviews and product link for eCommerce platforms.
+                            </h1>
+                            <p className="leading-relaxed">
+                                Detect fake product listings based on user reviews and ratings by analyzing discrepancies in review sentiment, rating consistency, and review patterns.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+                        <img className="object-cover object-center w-full h-full" src="src/assets/productReviewImpact/User_review_impact (1).jpg" alt="stats" />
+                    </div>
+                </div>
+            </section>
+
+
         </>
     );
 };
