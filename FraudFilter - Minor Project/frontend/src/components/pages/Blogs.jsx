@@ -8,7 +8,7 @@ const Blogs = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const topic = "scams"; // Define your topic here
-    const API_KEY = import.meta.env.VITE_GUARDIAN_API_KEY; // Replace with your API key
+    const API_KEY = import.meta.env.GUARDIAN_API_KEY; // Replace with your API key
 
     useEffect(() => {
         const fetchNews = async () => {
@@ -24,7 +24,7 @@ const Blogs = () => {
                 setError("Failed to load news. Please try again later.");
                 console.error("Error fetching news:", err);
             } finally {
-                setTimeout(() => setLoading(false), 1000); // Ensure loader shows for at least 5 sec
+                setTimeout(() => setLoading(false), 1000); 
             }
         };
 
