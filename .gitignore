@@ -5,6 +5,7 @@ old/
 
 # FRAUD FILTER - MINOR PROJECT 
 FraudFilter - Minor Project/frontend/node_modules
+FraudFilter - Minor Project/frontend/.env
 
 # MODEL TRAINER
 tiny-fake-review-detector/Model Trainer/.ipynb_checkpoints
