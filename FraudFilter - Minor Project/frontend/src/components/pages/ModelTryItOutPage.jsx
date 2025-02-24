@@ -65,8 +65,8 @@ const ModelTryItOutPage = () => {
 
     return (
         <>
-            <section className="bg-[#0B0F12]">
-                <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32">
+            <section className="bg-[#142F32] m-3">
+                <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-28">
                     <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
                         <div>
                             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-blue-900 uppercase rounded-full bg-blue-100">
@@ -302,19 +302,27 @@ const ModelTryItOutPage = () => {
                                 This project is open-source! Contribute, improve, or suggest features to make it better.
                             </p>
                             <div class="flex justify-center space-x-6">
-                                <button class="flex items-center justify-center font-semibold text-gray-950 bg-[#E2FECC] border-0 py-2 px-6 rounded-lg w-auto hover:bg-white hover:scale-105 transition-transform focus:outline-none">
+                                <a
+                                    href="https://github.com/its-maneeshk/Fake-Product-Detection-System.git"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="flex items-center justify-center font-semibold text-gray-950 bg-[#E2FECC] border-0 py-2 px-6 rounded-lg w-auto hover:bg-white hover:scale-105 transition-transform focus:outline-none">
                                     GitHub Repo
                                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
-                                </button>
-                                <button class="flex items-center justify-center text-start font-semibold text-gray-950 bg-white border-0 py-2 px-6 rounded-lg w-auto hover:bg-white hover:scale-105 transition-transform duration-200 animate-pulse focus:outline-none">
+                                </a>
+                                <a
+                                    href="https://github.com/login?return_to=%2Fits-maneeshk%2FFake-Product-Detection-System"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="flex items-center justify-center text-start font-semibold text-gray-950 bg-white border-0 py-2 px-6 rounded-lg w-auto hover:bg-white hover:scale-105 transition-transform duration-200 animate-pulse focus:outline-none">
                                     Want to contribute?
                                     <br />Fork the repo, add improvements, and submit a pull request!
                                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
-                                </button>
+                                </a>
                             </div>
                             <p class="text-xs text-gray-400 mt-4">
                                 Get involved and help shape the future of this project.
@@ -326,7 +334,7 @@ const ModelTryItOutPage = () => {
 
 
 
-            <section className="text-gray-600 bg-gray-200 body-font">
+            {/* <section className="text-gray-600 bg-gray-200 body-font">
                 <div className="container px-20 py-10 mx-auto flex flex-wrap">
                     <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
                         <div className="w-full sm:p-4 px-4 mb-6">
@@ -342,7 +350,7 @@ const ModelTryItOutPage = () => {
                         <img className="object-cover object-center w-full h-full" src="src/assets/productReviewImpact/User_review_impact (1).jpg" alt="stats" />
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
         </>

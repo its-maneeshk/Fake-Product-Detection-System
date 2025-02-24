@@ -9,7 +9,6 @@ export default {
       fontFamily: {
         salita: ['salita-font', 'monospace'],
         ananda: ['Ananda_Black_Personal_Use', 'monospace'],
-        inter_bold: ['Inter-bold','monospace'],
       }
     },
   },

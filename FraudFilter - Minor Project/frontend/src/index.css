@@ -6,10 +6,6 @@
     font-family: 'Ananda_Black_Personal_Use';
     src: url('./assets/fonts/Ananda_Black_Personal_Use.ttf');
 }
-@font-face {
-  font-family: 'Inter-bold';
-  src: url('./assets/fonts/Inter-bold.ttc');
-}
 .blue-glassmorphism {
     background: rgb(39, 51, 89, 0.4);
     border-radius: 16px;

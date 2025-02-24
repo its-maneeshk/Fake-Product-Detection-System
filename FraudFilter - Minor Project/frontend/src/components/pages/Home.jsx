@@ -1,5 +1,4 @@
 import React from 'react'
-import heroImage from '../../assets/heroImage.svg'
 import frameImage from '../../assets/frameImage.png'
 import HomePageVideo from '../../assets/homePageVideo.mp4'
 import { useNavigate } from 'react-router-dom';
@@ -20,27 +19,27 @@ const Home = () => {
     }
     return (
         <>
-            <section class="text-gray-600 bg-stone-100 body-font">
-                <div class="container mx-auto flex px-5 py-44 md:flex-row flex-col items-center">
-                    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-sans font-bold text-[#281930]">Detect Fake Reviews & Ensure Trust in Online Shopping
-                            <p class="text-[#142F32] hidden text-lg lg:inline-block" >AI-Powered Fake Product Detection:Analyzing Reviews and Ratings for Authenticity</p>
+            <section className="text-gray-600 bg-stone-100 body-font">
+                <div className="container mx-auto flex px-5 py-16 md:py-24 lg:py-40 md:flex-row flex-col items-center">
+                    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-sans font-bold text-[#281930]">Detect Fake Reviews & Ensure Trust in Online Shopping
                         </h1>
-                        <p class="mb-8 leading-relaxed">Our Fake Product Detection System helps identify fake reviews by analyzing customer feedback. Upload product reviews, get insights, and make informed decisions before purchasing</p>
-                        <div class="flex justify-center">
+                            <p className="text-[#142F32] hidden text-2xl lg:inline-block" >AI-Powered Fake Product Detection:Analyzing Reviews and Ratings for Authenticity</p>
+                        <p className="mb-8 leading-relaxed">Our Fake Product Detection System helps identify fake reviews by analyzing customer feedback. Upload product reviews, get insights, and make informed decisions before purchasing</p>
+                        <div className="flex justify-center">
                             <button
                                 onClick={handleNevigateTOTryItOut}
-                                class="inline-flex items-center justify-center w-60 text-white bg-[#142F32] border-0  py-2 px-6 focus:outline-none hover:bg-gray-950 hover:scale-105 transition-transform duration-200 rounded-lg text-lg">
+                                className="inline-flex items-center justify-center w-60 text-white bg-[#142F32] border-0  py-2 px-6 focus:outline-none hover:bg-gray-950 hover:scale-105 transition-transform duration-200 rounded-lg text-lg">
                                 Get Started
-                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
                             </button>
                             <button
                                 onClick={handleScroll}
-                                class="ml-4 inline-flex items-center justify-center text-[#142F32] bg-white border-2 font-semibold border-gray-900 rounded-lg py-2 px-6 focus:outline-none hover:bg-gray-300 hover:scale-105 transition-transform text-lg">
+                                className="ml-4 inline-flex items-center justify-center text-[#142F32] bg-white border-2 font-semibold border-gray-900 rounded-lg py-2 px-6 focus:outline-none hover:bg-gray-300 hover:scale-105 transition-transform text-lg">
                                 See More
-                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
                                     <path d="M19 9l-7 7-7-7"></path>
                                 </svg>
 
@@ -69,10 +68,6 @@ const Home = () => {
                             </video>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </section>
 
@@ -179,11 +174,11 @@ const Home = () => {
                 </div>
             </section>
 
-            <section class="text-gray-600  bg-stone-100 body-font">
-                <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-                    <div class="text-center lg:w-2/3 w-full">
-                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Why Trust Our Detection System?</h1>
-                        <p class="mb-8 leading-relaxed">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
+            <section className="text-gray-600  bg-stone-100 body-font">
+                <div className="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
+                    <div className="text-center lg:w-2/3 w-full">
+                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Why Trust Our Detection System?</h1>
+                        <p className="mb-8 leading-relaxed">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
 
                     </div>
                     <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
@@ -328,32 +323,57 @@ const Home = () => {
                 </div>
             </section>
 
-            <section class="text-gray-300 bg-[#142F32] body-font">
-                <div class="container mx-auto flex px-5 py-16 items-center justify-center">
-                    <div class="w-full max-w-4xl">
-                        <div class="p-6 rounded-lg border-2 border-indigo-500 text-center">
-                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-semibold text-white">
+            <section className="text-gray-300 bg-[#142F32] body-font">
+                <div className="container mx-auto flex px-5 py-16 items-center justify-center">
+                    <div className="w-full max-w-4xl">
+                        <div className="p-6 rounded-lg border-2 border-indigo-500 text-center">
+                            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold text-white">
                                 Join Us & Improve the System!
                             </h1>
-                            <p class="mb-6 leading-relaxed">
+                            <p className="mb-6 leading-relaxed">
                                 This project is open-source! Contribute, improve, or suggest features to make it better.
                             </p>
-                            <div class="flex justify-center space-x-6">
-                                <button class="flex items-center justify-center font-semibold text-gray-950 bg-[#E2FECC] border-0 py-2 px-6 rounded-lg w-auto hover:bg-white hover:scale-105 transition-transform focus:outline-none">
+                            <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 px-4">
+                                {/* GitHub Repo Button */}
+                                <a
+                                    href="https://github.com/its-maneeshk/Fake-Product-Detection-System.git"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center font-semibold text-gray-950 bg-[#E2FECC] py-6 px-6 rounded-lg w-full sm:w-auto hover:bg-white hover:scale-105 transition-transform focus:outline-none shadow-md"
+                                >
+                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 mr-2">
+                                        <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.266c-3.338.726-4.037-1.61-4.037-1.61-.547-1.39-1.335-1.76-1.335-1.76-1.09-.743.084-.727.084-.727 1.204.085 1.838 1.236 1.838 1.236 1.07 1.835 2.806 1.305 3.49.997.108-.776.42-1.305.764-1.605-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.236-3.22-.124-.303-.536-1.525.116-3.176 0 0 1.01-.323 3.3 1.23a11.43 11.43 0 0 1 3-.404c1.02.006 2.045.137 3 .404 2.29-1.553 3.298-1.23 3.298-1.23.653 1.65.242 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.625-5.477 5.922.43.37.81 1.104.81 2.226v3.293c0 .32.19.694.8.577C20.565 21.796 24 17.3 24 12 24 5.37 18.63 0 12 0z" />
+                                    </svg>
                                     GitHub Repo
-                                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                                    <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
-                                </button>
-                                <button class="flex items-center justify-center text-start font-semibold text-gray-950 bg-white border-0 py-2 px-6 rounded-lg w-auto hover:bg-white hover:scale-105 transition-transform duration-200 animate-pulse focus:outline-none">
-                                    Want to contribute?
-                                    <br />Fork the repo, add improvements, and submit a pull request!
-                                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                                </a>
+
+                                {/* Contribute Button */}
+                                <a
+                                    href="https://github.com/login?return_to=%2Fits-maneeshk%2FFake-Product-Detection-System"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex flex-col sm:flex-row items-center justify-center text-center sm:text-start font-semibold text-gray-950 bg-white py-3 px-6 rounded-lg w-full sm:w-auto hover:bg-gray-100 hover:scale-105 transition-transform duration-200 focus:outline-none shadow-md"
+                                >
+                                    <svg
+                                        className="w-7 h-7 mr-2"
+                                        fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
+                                        <path d="M6 3v8"></path> <path d="M18 3v8"></path> <path d="M6 12a6 6 0 0 0 12 0"></path> <circle cx="6" cy="3" r="2"></circle> <circle cx="18" cy="3" r="2"></circle> <circle cx="12" cy="15" r="2"></circle>
+                                    </svg>
+                                    <span>
+                                        Want to contribute? 
+                                        <br className="hidden sm:block" />
+                                        Fork the repo & submit a pull request!
+                                    </span>
+                                    <svg className="w-5 h-5 ml-2 mt-1 sm:mt-0" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
-                                </button>
+                                </a>
                             </div>
-                            <p class="text-xs text-gray-400 mt-4">
+
+                            <p className="text-xs text-gray-400 mt-4">
                                 Get involved and help shape the future of this project.
                             </p>
                         </div>
