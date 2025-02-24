@@ -43,29 +43,33 @@ The **Fake Product Detection System** is a **machine learning-powered web applic
 ## 📂 Project Directory Structure  
 
 ```sh
-Fake-Product-Detection-System/
+FraudFilter - Minor Project/
 │── backend/
-│   ├── models/
-│   │   ├── fake_review_model.pkl  # Trained ML model
-│   ├── routes/
-│   │   ├── predict.py             # API route for predictions
-│   ├── static/                    # Static files (if needed)
-│   ├── templates/                  # HTML templates (if used)
-│   ├── train_model.py              # Script to train the ML model
-│   ├── requirements.txt            # Python dependencies
-│   ├── app.py                      # Main Flask API file
+│   ├── .venv/                     # Virtual environment  
+│   ├── ml/                        # ML-related scripts and utilities  
+│   ├── model/                     # Trained ML models  
+│   ├── scraped_files/             # Stores scraped eCommerce reviews  
+│   ├── uploads/                   # Stores uploaded files for analysis  
+│   ├── utils/                     # Helper functions for backend  
+│   ├── app.py                     # Main Flask API file  
+│   ├── requirements.txt           # Python dependencies  
 │── frontend/
-│   ├── src/
-│   │   ├── components/             # React components
-│   │   ├── assets/                 # Images, icons, etc.
-│   │   ├── utils/                  # Utility functions
-│   ├── public/
-│   ├── package.json                # Frontend dependencies
-│   ├── tailwind.config.js          # Tailwind configuration
-│   ├── vite.config.js              # Vite configuration
-│── docs/                           # Documentation & guides
-│── README.md                       # Project documentation
-│── .gitignore                      # Git ignore file
+│   ├── node_modules/              # Dependencies for frontend  
+│   ├── public/                    # Public assets like index.html  
+│   ├── src/                       # React source files  
+│   │   ├── components/            # Reusable React components  
+│   │   ├── assets/                # Images, icons, etc.  
+│   │   ├── utils/                  # Utility functions  
+│   ├── .env                        # Environment variables  
+│   ├── .gitignore                  # Git ignore file  
+│   ├── eslint.config.js            # ESLint configuration  
+│   ├── index.html                  # Main HTML file  
+│   ├── package.json                # Frontend dependencies  
+│   ├── package-lock.json           # Lockfile for package versions  
+│   ├── postcss.config.js           # PostCSS configuration  
+│   ├── README.md                   # Project documentation  
+│   ├── tailwind.config.js          # Tailwind configuration  
+│   ├── vite.config.js              # Vite configuration  
 ```
 ---
 ## 📦 Installation & Setup  
@@ -114,8 +118,8 @@ npm run dev
 
 | **Interface** | **Preview** |
 |--------------|------------|
-| **HOME** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/fb51867134fdffadee01a5b7dd4ce345c22e1251/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%201.png" width="200px"> |
-| **WORKING & FEATURES** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%202.png" width="200px"> |
+| **HOME** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_DemoImage (1).png" width="200px"> |
+| **WORKING** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_DemoImage (6).png" width="200px"> |
 | **ABOUT** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%203.png" width="200px"> |
 | **CONTACTS** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%204.png" width="200px"> |
 | **BLOGS** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%205.png" width="200px"> |
