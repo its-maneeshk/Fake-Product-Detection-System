@@ -44,7 +44,7 @@ The **Fake Product Detection System** is a **machine learning-powered web applic
 ```sh
 FraudFilter - Minor Project/
 │── backend/
-│   ├── .venv/                     # Virtual environment  
+│   ├── .venv/                     # Virtual environment (version = 3.13.2) 
 │   ├── ml/                        # ML-related scripts and utilities  
 │   ├── model/                     # Trained ML models  
 │   ├── scraped_files/             # Stores scraped eCommerce reviews  
