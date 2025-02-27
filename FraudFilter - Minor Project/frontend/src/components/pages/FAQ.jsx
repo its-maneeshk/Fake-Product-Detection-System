@@ -1,52 +1,59 @@
 // PURPOSE: To answer common questions users might have about the system, how it works, or any troubleshooting tips.
 
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useState } from 'react';
 
 const FAQ = () => {
-        const nevigate = useNavigate();
-        const handleNevigateTOTryItOut = () => {
-            nevigate('/modeltryitout')
-        }
-    return (
-        <section className="text-gray-600 body-font">
-      <div className="container px-5 py-7 mx-auto">
-        <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-          <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 className="text-gray-900 text-lg title-font font-medium mb-2"><span className="inline-block text-sm font-medium text-white bg-green-400 rounded-3xl py-1 px-2 mt-4">1</span>        What is the Fake Product Detection System?</h2>
-            <p className="leading-relaxed text-base">Our system uses machine learning algorithms to analyze product reviews and star ratings to identify whether a product is authentic or has fake reviews. It checks patterns in the reviews to provide an accurate product authenticity score.</p>
-          </div>
-        </div>
-        
-        <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-          <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 className="text-gray-900 text-lg title-font font-medium mb-2"><span className="inline-block text-sm font-medium text-white bg-green-400 rounded-3xl py-1 px-2 mt-4">2</span>        How does the system detect fake reviews?</h2>
-            <p className="leading-relaxed text-base">The system analyzes both the content of the reviews and the behavior of the reviewers. It looks for common patterns of fake behavior, such as overly generic language, repeated phrases, or an unusual volume of positive reviews in a short time.</p>
-          </div>
-        </div>
+  const [openIndex, setOpenIndex] = useState(null);
 
-        <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-          <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 className="text-gray-900 text-lg title-font font-medium mb-2"><span className="inline-block text-sm font-medium text-white bg-green-400 rounded-3xl py-1 px-2 mt-4">3</span>        How accurate is the system?</h2>
-            <p className="leading-relaxed text-base">Our machine learning model is trained on a large dataset of authentic and fake reviews. The accuracy improves as more data is analyzed, making it a reliable tool for detecting fake products over time.</p>
-          </div>
-        </div>
+  const faqs = [
+    { title: "How does the Fake Product Detection System work?", content: "Our system uses machine learning to analyze customer reviews and ratings, identifying inconsistencies that may indicate fake products." },
+    { title: "What data does the system analyze?", content: "It processes product reviews, customer ratings, and metadata to classify products as genuine or potentially fake." },
+    { title: "Can the system detect fake reviews in real-time?", content: "Yes, our system continuously analyzes new reviews and provides real-time insights into product authenticity." },
+    { title: "How does the system differentiate between fake and genuine reviews?", content: "The system uses sentiment analysis and natural language processing to detect inconsistencies in reviews. It checks for patterns like exaggerated praise, repetitive content, and mismatches between ratings and text." },
+    { title: "What criteria determine if a product is fake?", content: "A product is classified as fake if a significant percentage of its reviews are identified as fraudulent. If 50% or more of the reviews are fake, the product is flagged as fraudulent." },
+    { title: "What measures are taken to prevent false positives?", content: "The system uses multiple indicators to ensure accurate detection. It does not rely solely on one metric but evaluates linguistic patterns, review behavior, and customer sentiment trends." },
+    { title: "Does the system provide a confidence score for its results?", content: "Yes, each product analysis includes a confidence score indicating the likelihood of fake reviews." },
+    { title: "Does the system support multiple languages?", content: "Currently, our model primarily works with English-language reviews. However, we are working on expanding support for multiple languages." },
+    { title: "How accurate is the fake product detection?", content: "Accuracy depends on data quality and volume. Our model is trained on a large dataset for high precision." },
+    { title: "Which eCommerce platforms are supported?", content: "The system supports multiple platforms via web scraping and API integration for review analysis." },
+    { title: "How can I upload a product review file?", content: "You can upload a CSV file containing product ID, name, customer reviews, and ratings for analysis." },
+    { title: "What happens if a product is marked as fake?", content: "If a product is classified as fake, we recommend cross-checking with other sources and reporting the seller if necessary." },
+    { title: "Can I trust the system's results?", content: "Our system is trained on a large dataset and provides highly accurate results, but manual verification is always recommended." },
+  ];
 
-        <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
-          <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 className="text-gray-900 text-lg title-font font-medium mb-2"><span className="inline-block text-sm font-medium text-white bg-green-400 rounded-3xl py-1 px-2 mt-4">4</span>        Can the system detect all fake reviews?</h2>
-            <p className="leading-relaxed text-base">While the system provides highly accurate results, no automated system is perfect. Our tool helps identify potential fake reviews, but it’s still important for users to critically assess the product and reviews themselves.</p>
-          </div>
+  const toggleFaq = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+  return (
+    <section className="bg-stone-100">
+      <div className="container max-w-4xl px-6 py-8 mx-auto">
+        <h1 className="text-2xl font-semibold text-center text-gray-950 lg:text-3xl">
+          Frequently Asked Questions
+        </h1>
+        <div className="mt-8 space-y-4">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-2 border-gray-900 text-xl font-semibold rounded-lg">
+              <button
+                className="flex items-center justify-between w-full p-4"
+                onClick={() => toggleFaq(index)}
+              >
+                <h1 className="font-semibold text-gray-950 text-left">{faq.title}</h1>
+                <span className={`text-gray-600 transition-transform duration-200 ${openIndex === index ? "rotate-180" : ""}`}>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+              {openIndex === index && (
+                <p className="px-4 pb-4 text-sm text-gray-700">{faq.content}</p>
+              )}
+            </div>
+          ))}
         </div>
-
-        <button 
-        onClick={handleNevigateTOTryItOut}
-        className="flex mx-auto mt-20 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">
-            Try It Now
-        </button>
       </div>
     </section>
-    )
+  )
 }
 
 export default FAQ
