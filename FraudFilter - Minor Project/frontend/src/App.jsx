@@ -10,7 +10,6 @@ import FAQ from './components/pages/FAQ'
 import ModelTryItOutPage from './components/pages/ModelTryItOutPage'
 import Blogs from './components/pages/Blogs'
 import PageNotFound from './components/pages/PageNotFound'
-import Test from './Test/Test'
 
 
 function App() {
@@ -83,15 +82,6 @@ function App() {
           <Header />
           <ModelTryItOutPage />
           <Footer />
-        </div>
-      )
-    },
-    {
-      path: '/test',
-      element: (
-        <div>
-          <Header/>
-          <Test/>
         </div>
       )
     },

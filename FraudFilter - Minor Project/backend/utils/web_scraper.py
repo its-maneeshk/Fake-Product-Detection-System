@@ -22,11 +22,11 @@ def extract_product_info(url):
     
     # Extract product ID and name
     prod_id = path_parts[-1] if len(path_parts) > 1 else "UnknownID"
-    prod_name = path_parts[-2].replace("-", " ") if len(path_parts) > 2 else "Unknown Product"
+    prod_name = path_parts[-3].replace("-", " ").upper() if len(path_parts) > 2 else "Unknown Product"
     
     return prod_id, prod_name
 
-def scrape_reviews(url, max_pages=2):
+def scrape_reviews(url, max_pages=5):
     """
     Scrapes reviews and ratings from a given product URL and saves them to a CSV file.
 
