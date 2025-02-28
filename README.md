@@ -27,7 +27,7 @@ The **Fake Product Detection System** is a **machine learning-powered web applic
 
 ---
 
-## 📌 How It Works  
+## 📌 How It Works ?  
 
 1️⃣ **Train the Machine Learning model** using real & fake review datasets.  
 2️⃣ **Save the trained model** as `fake_review_model.pkl`.  
