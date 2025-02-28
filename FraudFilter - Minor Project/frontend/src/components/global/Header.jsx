@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Header = () => {
     return (
         <header className="bg-[#142F32]">
-            <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between">
+            <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-around">
                 <a className="flex title-font font-medium items-center cursor-pointer mb-4 md:mb-0">
                     <span className="ml-3 font-ananda font-bold text-4xl text-white cursor-pointer hover:text-[#E4FFCD]">Fraud Filter</span>
                 </a>
