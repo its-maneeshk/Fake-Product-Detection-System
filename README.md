@@ -4,7 +4,6 @@
 The **Fake Product Detection System** is a **machine learning-powered web application** that helps users identify whether a product has **genuine or manipulated reviews** on eCommerce platforms. It leverages **Natural Language Processing (NLP)** and **supervised learning models** to analyze reviews and detect fake ones.
 
 ---
-
 ## 🌟 Features  
 
 | **Feature**                    | **Description**                                                                                          |
@@ -45,7 +44,7 @@ The **Fake Product Detection System** is a **machine learning-powered web applic
 ```sh
 FraudFilter - Minor Project/
 │── backend/
-│   ├── .venv/                     # Virtual environment  
+│   ├── .venv/                     # Virtual environment (version = 3.13.2) 
 │   ├── ml/                        # ML-related scripts and utilities  
 │   ├── model/                     # Trained ML models  
 │   ├── scraped_files/             # Stores scraped eCommerce reviews  
@@ -118,13 +117,15 @@ npm run dev
 
 | **Interface** | **Preview** |
 |--------------|------------|
-| **HOME** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_DemoImage (1).png" width="200px"> |
-| **WORKING** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_DemoImage (6).png" width="200px"> |
-| **ABOUT** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%203.png" width="200px"> |
-| **CONTACTS** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%204.png" width="200px"> |
-| **BLOGS** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%205.png" width="200px"> |
-| **FAQ's** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/e39b08af171cfbd10fd9727f4b014f637a9c5c94/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%206.png" width="200px"> |
-| **MODEL TRY PAGE** | <img src="https://github.com/its-maneeshk/Fake-Product-Detection-System/blob/748fbeba14ab27dcfcdc998282dc48df47ecbb75/FraudFilter%20-%20Minor%20Project/project_images/User_review_impact%207.png" width="200px"> |
+| **HOME** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_demoImage - HOME.png" width="200px"> |
+| **WORKING** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_demoImage - WORKING.png" width="200px"> |
+| **ABOUT** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_demoImage - ABOUT US.png" width="200px"> |
+| **CONTACTS** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_demoImage - CONTACT.png" width="200px"> |
+| **BLOGS** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_demoImage - BLOGS.png" width="200px"> |
+| **FAQ's** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_demoImage - FAQs.png" width="200px"> |
+| **MODEL TRY PAGE** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_demoImage - TryItOutPage.png" width="200px"> |
+| **USING CSV FILE** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_demoImage - USING CSV FILE.png" width="200px"> |
+| **USING PRODUCT LINK** | <img src="FraudFilter - Minor Project/project_images/FraudFilter_demoImage - USING PRODUCT LINK.png" width="200px"> |
 
 
 📌 More detailed **UI screenshots** can be found in the project_images/ folder.
