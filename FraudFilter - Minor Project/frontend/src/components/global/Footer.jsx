@@ -82,9 +82,9 @@ const Footer = () => {
                 </div>
             </div>
             <div className="bg-gray-100">
-                <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row justify-center">
                     <p className="text-gray-900 hover:text-gray-800 cursor-pointer text-base font-semibold text-center sm:text-left">© 2025 Product Authenticity Checker | All rights reserved.
-                        <a href="/" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@MinorProject</a>
+                        <a href="/" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">**@MinorProject**</a>
                     </p>
                 </div>
             </div>
