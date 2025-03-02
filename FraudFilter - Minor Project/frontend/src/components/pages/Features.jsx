@@ -112,7 +112,7 @@ const Features = () => {
                     </div>
                 </div>
                 {/* <img src="https://imgs.search.brave.com/Jx8eAt3b3FFc7T8qGmK4AjpohtGB8b4pA1TYkGAkfTQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzY1LzEzLzk0/LzM2MF9GXzk2NTEz/OTQwOV9JT21HVGVQ/Z2ZFVW44ek1YWnFw/YTlPRXRpRmJndkVC/TC5qcGc" alt="Overlay Image" className="absolute top-[90%] left-1/2 transform -translate-x-1/2 w-3/12 sm:w-2/12 rounded-lg shadow-md" /> */}
-                <div className="absolute top-[90%] left-1/2 transform -translate-x-1/2 w-3/12 sm:w-2/12 rounded-lg shadow-md">
+                <div className="absolute top-[96%] left-1/2 transform -translate-x-1/2 w-1/12 sm:w-1/12 rounded-lg shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150"><path fill="none" stroke="#FF156D" stroke-width="15" stroke-linecap="round" stroke-dasharray="300 385" stroke-dashoffset="0" d="M275 75c0 31-27 50-50 50-58 0-92-100-150-100-28 0-50 22-50 50s23 50 50 50c58 0 92-100 150-100 24 0 50 19 50 50Z"><animate attributeName="stroke-dashoffset" calcMode="spline" dur="2" values="685;-685" keySplines="0 0 1 1" repeatCount="indefinite"></animate></path></svg>
                 </div>
             </section>
