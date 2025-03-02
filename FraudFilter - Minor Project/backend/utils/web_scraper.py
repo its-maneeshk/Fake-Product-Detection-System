@@ -26,7 +26,7 @@ def extract_product_info(url):
     
     return prod_id, prod_name
 
-def scrape_reviews(url, max_pages=5):
+def scrape_reviews(url, max_pages=1):
     """
     Scrapes reviews and ratings from a given product URL and saves them to a CSV file.
 
