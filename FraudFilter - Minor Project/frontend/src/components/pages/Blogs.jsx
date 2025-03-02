@@ -1,14 +1,13 @@
 // PURPOSE: To keep users updated about any new updates, developments, or related news in the eCommerce and product authenticity domain.
 
-import React from 'react'
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Blogs = () => {
     const [news, setNews] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const topic = "scams"; // Define your topic here
-    const API_KEY = import.meta.env.GUARDIAN_API_KEY; // Replace with your API key
+    const API_KEY = import.meta.env.VITE_GUARDIAN_API_KEY;
 
     useEffect(() => {
         const fetchNews = async () => {
