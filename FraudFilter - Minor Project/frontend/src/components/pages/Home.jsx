@@ -22,7 +22,7 @@ const Home = () => {
             <section className="text-gray-600 bg-stone-100 body-font">
                 <div className="container mx-auto flex px-5 py-16 md:py-24 lg:py-40 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-sans font-bold text-[#281930]">Detect Fake Reviews & Ensure Trust in Online Shopping
+                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-sans font-bold text-[#281930]">Detect Fake Reviews & <span className='text-[#142F32]'>Ensure Trust</span> in Online Shopping
                         </h1>
                             <p className="text-[#142F32] hidden text-2xl lg:inline-block" >AI-Powered Fake Product Detection:Analyzing Reviews and Ratings for Authenticity</p>
                         <p className="mb-8 leading-relaxed">Our Fake Product Detection System helps identify fake reviews by analyzing customer feedback. Upload product reviews, get insights, and make informed decisions before purchasing</p>

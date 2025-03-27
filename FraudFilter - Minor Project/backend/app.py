@@ -5,6 +5,7 @@ from ml.model_loader import load_model
 from ml.review_processing import detect_fake_reviews
 from utils.file_handler import save_file, process_csv
 from utils.web_scraper import scrape_reviews
+import pandas as pd
 
 # Initialize Flask App
 app = Flask(__name__)
@@ -12,8 +13,11 @@ CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
 
 # Set Upload Folder for CSV files
 UPLOAD_FOLDER = "uploads"
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)  # Ensure folder exists
+PROCESSED_FOLDER = "processed_files"
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)  # To Ensure folder exists
+os.makedirs(PROCESSED_FOLDER, exist_ok=True)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
+app.config["PROCESSED_FOLDER"] = PROCESSED_FOLDER
 
 # Load ML Model & Vectorizer
 model, vectorizer = load_model()
@@ -24,6 +28,15 @@ def home():
     Root endpoint to check if the API is running.
     """
     return jsonify({"message": "Fake Product Detection API is running!"})
+
+# This function to save processed CSV with fake review marks
+def save_processed_file(df, filename):
+    """
+    Saves the processed CSV file with an extra column marking fake reviews.
+    """
+    processed_filepath = os.path.join(PROCESSED_FOLDER, f"analyzed_{filename}")
+    df.to_csv(processed_filepath, index=False)
+    return processed_filepath
 
 @app.route("/upload", methods=["POST"])
 def upload_file():
@@ -74,7 +87,7 @@ def analyze_product():
     url = data["url"]
 
     # Scrape reviews from product URL
-    prod_id, product_name, csv_path, df = scrape_reviews(url)
+    prod_id, product_name, csv_path, df = scrape_reviews(url) # Ignore `csv_path` to avoid duplicate saving
 
     if df is None or df.empty:
         return jsonify({"error": "No reviews found or scraping failed."}), 500
@@ -84,12 +97,8 @@ def analyze_product():
 
     return jsonify({
         "message": "URL processed successfully",
-        "product_name": product_name,
-        "csv_file_path": csv_path,  # Return the saved CSV file path
         **result
     }), 200
-
-
-
+    
 if __name__ == "__main__":
     app.run(debug=True)

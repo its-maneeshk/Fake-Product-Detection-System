@@ -2,6 +2,7 @@ import re
 import pandas as pd
 import nltk
 from nltk.corpus import stopwords
+import os
 
 nltk.download("stopwords")
 STOPWORDS = set(stopwords.words("english"))
@@ -39,11 +40,23 @@ def detect_fake_reviews(df, model, vectorizer):
     prod_id = df["prod_id"].iloc[0] if "prod_id" in df.columns else "Unknown"
     prod_name = df["prod_name"].iloc[0] if "prod_name" in df.columns else "Unknown"
 
+     # CHANGED: Ensure processed_files directory exists
+    processed_folder = "processed_files"
+    os.makedirs(processed_folder, exist_ok=True)  
+
+    # CHANGED: Add predictions to DataFrame
+    df["is_fake"] = predictions  # 1 = Fake, 0 = Real
+    
+    # CHANGED: Save processed file with marked fake reviews
+    processed_file_path = os.path.join(processed_folder, f"{prod_name}_processed.csv")
+    df.to_csv(processed_file_path, index=False)
+
     return {
         "prod_id": prod_id,
         "prod_name": prod_name,
         "total_reviews": int(total_reviews),
         "fake_reviews_count": fake_reviews_count,
         "fake_percentage": round(fake_percentage, 2),
-        "product_status": product_status
+        "product_status": product_status,
+        "processed_file_path": processed_file_path  # CHANGED: Return processed file path
     }
