@@ -132,6 +132,16 @@ npm run dev
 
 ---
 
+## Disclaimer
+
+> This project is **developed for educational and research purposes only.**
+We have used publicly available product reviews from Flipkart to analyze and detect fake reviews.
+No part of this project is intended for commercial use or to infringe on Flipkart’s rights.
+All trademarks and product information belong to their respective owners.
+*If required, we are willing to remove any data or content upon request.*
+
+---
+
 ## 🔗 Contributing  
 
 💡 **Want to contribute?** Fork the repo, create a branch, and submit a pull request. I welcome **bug fixes, feature improvements, and optimizations**.  
