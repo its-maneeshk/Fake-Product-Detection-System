@@ -77,7 +77,8 @@ FraudFilter - Minor Project/
 Ensure you have the following installed on your system:  
 - **Python 3.8+**  
 - **Node.js & npm**  
-- **pip** (Python package manager)  
+- **pip** (Python package manager)
+- **Virtual env** (recommanded: use virtual environment if accidently installed requirements globally use "pip uninstall -r requirements.txt -y")
 
 ---
 
@@ -92,6 +93,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+#[recommanded: use virtual environment if accidently installed requirements globally use "pip uninstall -r requirements.txt -y]
 
 # Run the Flask server
 python app.py
