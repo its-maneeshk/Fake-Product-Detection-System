@@ -92,7 +92,7 @@ def analyze_product():
     if df is None or df.empty:
         return jsonify({"error": "No reviews found or scraping failed."}), 500
 
-    # ✅ Pass only "customer_review" to the ML model for processing
+    # Pass only "customer_review" to the ML model for processing
     result = detect_fake_reviews(df, model, vectorizer)
 
     return jsonify({

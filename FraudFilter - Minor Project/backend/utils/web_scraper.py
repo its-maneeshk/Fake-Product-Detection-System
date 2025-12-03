@@ -57,11 +57,11 @@ def scrape_reviews(url, max_pages=1):
             page_count += 1
 
             # Scrape ratings
-            rating_elements = driver.find_elements(By.CSS_SELECTOR, "div.XQDdHH.Ga3i8K")
+            rating_elements = driver.find_elements(By.CSS_SELECTOR, "div.MKiFS6.ojKpP6")
             ratings.extend([float(rating.text.strip()) for rating in rating_elements if rating.text.strip().isdigit()])
 
             # Scrape reviews
-            review_elements = driver.find_elements(By.CSS_SELECTOR, "p.z9E0IG")
+            review_elements = driver.find_elements(By.CSS_SELECTOR, "p.qW2QI1")
             reviews.extend([review.text.strip() for review in review_elements])
 
             # Try to click "Next" button
